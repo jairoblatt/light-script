@@ -4,9 +4,12 @@
   "type": "module",
   "sideEffects": false,
   "license": "MIT",
-  "description": "An light way to load client-side scripts.",
+  "description": "A light way to load client-side scripts",
   "author": "Jairo Blatt <jairoblatt@gmail.com>",
-  "repository": "https://github.com/jairoblatt/light-script",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jairoblatt/light-script"
+  },
   "main": "dist/lightScript.ssr.js",
   "module": "dist/lightScript.esm.js",
   "browser": "dist/lightScript.esm.js",
