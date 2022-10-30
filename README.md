@@ -40,7 +40,7 @@ defineScript('https://my-script.js');
 You can use lightScript directly from a CDN via a script tag:
 
 ```html
-<script src="https://unpkg.com/light-script@latest/dist/lightScript.min.js"></script>
+<script src="https://unpkg.com/@jrblatt/light-script@latest/dist/lightScript.min.js"></script>
 
 <script>
 const { defineScript } = lightScript;
@@ -51,7 +51,7 @@ defineScript('https://my-script.js');
 ### Cdn + module 
 ```html
 <script type="module">
- import { defineScript } from 'https://unpkg.com/light-script@latest/dist/lightScript.esm.js'
+ import { defineScript } from 'https://unpkg.com/@jrblatt/light-script@latest/dist/lightScript.min.js'
 
 defineScript('https://my-script.js')
 </script>
@@ -63,7 +63,7 @@ defineScript('https://my-script.js')
 <script type="importmap">
  {
     "imports": {
-      "light-script": "https://unpkg.com/light-script@latest/dist/lightScript.esm.js"
+      "light-script": "https://unpkg.com/@jrblatt/light-script@latest/dist/lightScript.min.js"
     }
   }
 </script>
