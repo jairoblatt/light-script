@@ -19,20 +19,20 @@
 ### npm:
 
 ```bash
-npm i light-script
+npm i @jrblatt/light-script
 ```
 
 ### yarn:
 
 ```bash
-yarn add light-script
+yarn add @jrblatt/light-script
 ```
 
 ## 🦜 Usage 
 
 ### ESM
 ```js
-import { defineScript } from 'light-script'
+import { defineScript } from '@jrblatt/light-script'
 
 defineScript('https://my-script.js');
 ```
@@ -68,7 +68,7 @@ defineScript('https://my-script.js')
   }
 </script>
 <script type="module">
- import { defineScript } from 'light-script'
+ import { defineScript } from '@jrblatt/light-script'
 
  defineScript('https://my-script.js');
 <script>
@@ -132,7 +132,7 @@ defineAsyncScript('my-script.js', { onSuccess: console.log }).then(console.log)
 If you need to remove any lightScript of the Document flow, use `destroyScript` to do that.
 ### Example
 ```js 
-import { destroyScript }  from 'light-script';
+import { destroyScript }  from '@jrblatt/light-script';
 // It will remove the eascript of the document.
 destroyScript('my-script.js')
 ```
@@ -174,7 +174,7 @@ defineScript('https://unpkg.com/vue@3/dist/vue.global.js', {
 
 ## Example
 ```js
-import { defineScript } from 'light-script';
+import { defineScript } from '@jrblatt/light-script';
 
 const { destroy, suspense } = defineScript('https://cdn.jsdelivr.net/npm/preact/dist/preact.min.js', {
   async: true,
@@ -228,4 +228,4 @@ await suspense();
 
 ## 📄 License
 
-[MIT License](https://github.com/jairoblatt/ligh-script/blob/main/LICENSE) © 2022-PRESENT [Jairo Blatt](https://github.com/jairoblatt)
+[MIT License](https://github.com/jairoblatt/ligh-script/main/LICENSE) © 2022-PRESENT [Jairo Blatt](https://github.com/jairoblatt)
